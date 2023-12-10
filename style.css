@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(10, 8, 8, 0.836);
+}
+h1{
+    margin:20px auto;
+}
+.flex-container{
+    max-width:450px;
+    background-color: white;
+    border-radius: 5px;
+    margin:30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container>p:first-child{
+    width:95%;
+    margin-top:10px;
+    display: none;
+    background-color: rgb(230, 181, 148);
+    border-radius: 8px;
+    padding: 10px 0;
+    text-align: center;
+}
+.flex-container>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:95%;
+}
+#inputx>div{
+    margin:10px;
+    border:1px solid rgb(82, 80, 80);
+    border-radius: 8px;
+    height: 40px;
+    overflow: hidden;
+
+}
+#inputx>div>label{
+    display: inline-block;
+    text-align: center;
+    width:10%;
+    height:100%;
+    padding:10px 0;
+    background: rgb(202, 199, 200);
+    border-right: 1px solid rgb(82, 80, 80);
+    
+}
+#inputx>div>input{
+    display: inline-block;
+    border:none;
+    height: 100%;
+    padding: 10px;
+    outline:none;
+    width: 90%;
+}
+#inputx>div:last-child>input{
+    width:100%;
+}
+
+
+#footer{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding:10px;
+    margin:20px;
+    width: 90%;
+    transition: background-color 1s;
+}
+#footer:hover{
+    background-color: black;
+    box-shadow: 3px 3px 3px rgb(37, 37, 37);
+    cursor: pointer;
+}
+#output>h3{
+    text-align: center;
+}
+#output>div{
+    margin:10px;
+    border:1px solid rgb(82, 80, 80);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgb(202, 199, 200);
+}
+#output>div>label{
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    padding:10px;
+    border-right: 1px solid rgb(82, 80, 80);
+}
+#output>div>input{
+    display: inline-block;
+    border:none;
+    padding:10px;
+    background: rgb(202, 199, 200);
+    outline:none;
+    width: 50%;
+}
+#output{
+    display: none;
+    margin-bottom: 20px;
+}
+#gif{
+    display:none;
+}
+@media(max-width:768px){
+    .flex-container{
+        max-width: 300px;
+    }
+}
